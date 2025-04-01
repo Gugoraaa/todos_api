@@ -2,18 +2,18 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.js",
+        "src": "src/server.ts",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "/server.js"
+        "dest": "/src/server.ts"
       }
     ],
     "env": {
-      "DATABASE_URL": "postgresql://neondb_owner:npg_BcSTeRW3Cs5t@ep-fragrant-feather-aalf6wwe-pooler.westus3.azure.neon.tech/neondb?sslmode=require"
+      "DATABASE_URL": "postgresql://neondb_owner:npg_BcSteRW3Cs5t@ep-fragrant-feather-aalf6wwe-pooler.westus3.azure.neon.tech/neondb?sslmode=require"
     }
   }
   
